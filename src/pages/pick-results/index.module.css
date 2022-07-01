@@ -1,0 +1,200 @@
+.pickResults {
+  width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.pickResults .header {
+  width: 375px;
+  height: 176px;
+  position: relative;
+}
+
+.pickResults .header > img {
+  display: block;
+  border: none;
+  width: 375px;
+  height: auto;
+}
+
+.pickResults .header .resultsNumber {
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  white-space: nowrap;
+}
+
+.pickResults .header .resultsNumber > span {
+  color: #FF6E0A;
+}
+
+.pickResults .divider {
+  width: 372px;
+  height: 0.5px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.pickResults .sectionTitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #282828;
+  text-align: center;
+}
+
+.availableBooks {
+  width: 100%;
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.availableBooks:before {
+  content: '';
+  width: 31px;
+  height: 31px;
+  background-image: url("../../assets/circle.png");
+  background-size: cover;
+  position: absolute;
+  top: 19px;
+  left: 48px;
+}
+
+.availableBooks .main {
+  margin-top: 24px;
+}
+
+.availableBooks .main > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.65);
+  padding: 0;
+  margin: 0;
+}
+
+.availableBooks .main > p:not(:first-of-type) {
+  margin-top: 8px;
+}
+
+.results {
+  width: 100%;
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.results:before {
+  content: '';
+  width: 31px;
+  height: 31px;
+  background-image: url("../../assets/circle1.png");
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  right: 60px;
+}
+
+.barChart {
+  width: 327px;
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
+  height: 237px;
+}
+
+.barChart > div {
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.barChart > div .number {
+  font-size: 20px;
+  line-height: 25px;
+  color: #282828;
+  opacity: 0.4;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.barChart > div:nth-of-type(1) .bar {
+  height: 155px;
+  opacity: 0.8;
+}
+
+.barChart > div:nth-of-type(2) .bar {
+  height: 120px;
+  opacity: 0.6;
+}
+
+.barChart > div:nth-of-type(3) .bar {
+  height: 99px;
+  opacity: 0.4;
+}
+
+.barChart > div:nth-of-type(4) .bar {
+  height: 70px;
+  opacity: 0.2;
+}
+
+.barChart > div .bar {
+  width: 75px;
+  background: #FF6E0A;
+}
+
+.barChart > div .label {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.65);
+  height: 82px;
+}
+
+.rankList {
+  width: 327px;
+}
+
+.rankList .item {
+  display: flex;
+  align-items: center;
+}
+
+.rankList .item:not(:first-of-type) {
+  margin-top: 17px;
+}
+
+.rankList .item .sort {
+  font-size: 20px;
+  line-height: 25px;
+  color: #282828;
+  opacity: 0.4;
+  width: 26px;
+  flex-shrink: 0;
+}
+
+.rankList .item .name {
+  padding-left: 7px;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.65);
+  flex: 1;
+}
+
+.rankList .item .score {
+  font-size: 16px;
+  line-height: 22px;
+  color: #282828;
+  opacity: 0.4;
+  flex-shrink: 0;
+}

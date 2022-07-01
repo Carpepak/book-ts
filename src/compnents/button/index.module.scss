@@ -1,0 +1,22 @@
+button {
+  appearance:none;
+  outline: none;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  background: #00B4AA;
+  box-shadow: 0 0 24px rgba(28, 129, 255, 0.1);
+  border-radius: 24px;
+  height: 48px;
+  &:disabled {
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

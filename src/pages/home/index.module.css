@@ -1,0 +1,32 @@
+.home {
+  width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: calc(100px + env(safe-area-inset-bottom));
+  position: relative;
+}
+
+.home .pageImage {
+  display: block;
+  border: none;
+  width: 375px;
+  height: auto;
+}
+
+.home .bookList {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 12px;
+  justify-items: center;
+}
+
+.home .footer {
+  position: fixed;
+  width: 375px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  bottom: 0;
+  padding: 16px 16px calc(16px + env(safe-area-inset-bottom)) 16px;
+  background-color: #FFFFFF;
+  z-index: 2;
+}

@@ -1,0 +1,101 @@
+.bookCheck {
+  width: 343px;
+  height: 192px;
+  background: #FFFFFF;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 13px;
+  display: flex;
+  position: relative;
+}
+
+.bookCheck > * {
+  user-select: none;
+}
+
+.bookCheck.checked:before {
+  background-image: url("../../assets/checked.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 9px 6px;
+}
+
+.bookCheck.checked:after {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.bookCheck:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #DCDCDC;
+  position: absolute;
+  top: 17px;
+  right: 12px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.bookCheck:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+}
+
+.bookCheck .cover {
+  border: none;
+  font-size: 10px;
+  position: relative;
+}
+
+.bookCheck .cover > span {
+  position: absolute;
+  z-index: 1;
+  padding: 2px 4px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px 0 4px 0;
+}
+
+.bookCheck .cover > img {
+  width: 120px;
+  height: 160px;
+  display: block;
+  background-color: #999999;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.bookCheck .descriptions {
+  margin-left: 12px;
+}
+
+.bookCheck .descriptions .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-right: 22px;
+}
+
+.bookCheck .descriptions .info {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.bookCheck .descriptions .summary {
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 15px;
+  color: #282828;
+}
